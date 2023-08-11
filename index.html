@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> -->
+
+    <link rel="stylesheet" href="css0811/style.css">
+    </link>
+
+    <script src="js0811/jquery.js"></script>
+    <script src="js0811/script.js"></script>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="d-flex flex-sm-direction-column">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+        </div>
+    </div> -->
+
+    <header>
+        <div class="container d-flex justify-content-between first-header">
+            <div class="daum-logo">
+                <img src="../../img/logo_2.PNG" alt="logo">
+            </div>
+            <div class="header1-2 d-flex">
+                <button type="button" class="login-button">로그인</button>
+                <div class="mail-widgets-icon"></div>
+                <span class="material-symbols-outlined mail">mail</span>
+                <span class="material-symbols-outlined widgets"> widgets</span>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-between twice-header">
+            <div class="cafe-logo">
+                <img src="../../img/logo.PNG" alt="logo">
+            </div>
+            <div class="menu">
+                <ul class="d-flex">
+                    <li>홈</li>
+                    <li>테이블</li>
+                    <li>팬카페</li>
+                    <li>카페랭킹</li>
+                    <li>내카페</li>
+                </ul>
+            </div>
+            <div class="search d-flex">
+                <form action="post" class="d-flex">
+                    <!-- <select name="search-box">
+                        <option value="" selected>전체선택</option>
+                        <option value="">통합검색</option>
+                        <option value="">카페검색</option>
+                        <option value="">테이블검색</option>
+                    </select> -->
+                    <div onclick="popupClick()" class="popupbox d-flex">
+                        <ul class="select">
+                            <!-- <li class="first-popup" onclick="popupClick()">전체검색 -->
+                            <li class="first-popup">전체검색
+                                <ul id="popup-menu" class="popup-menu">
+                                    <li class="popup">전체검색</li>
+                                    <li class="popup">통합검색</li>
+                                    <li class="popup">카페검색</li>
+                                    <li class="popup">테이블검색</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <span class="material-symbols-outlined down-simbol">expand_more</span>
+                    </div>
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <span class="material-symbols-outlined search-icon">search</span>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
